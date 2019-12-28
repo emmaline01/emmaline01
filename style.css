@@ -1,9 +1,36 @@
-a {
+.icons {
     color: black;
     text-decoration: none;
 }
 
-a:hover {
+.icons:hover {
     text-decoration: none;
     color:darkblue;
+}
+
+.jumbotron {
+    height: 100vh;
+}
+
+.vert-center {
+    min-height: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar {
+    display: flex;
+    align-items:center;
+    justify-content: right;
+
+    text-decoration: none;
+    color: white;
+}
+
+.topbar:hover {
+    text-decoration: none;
+    color: gray;
 }
