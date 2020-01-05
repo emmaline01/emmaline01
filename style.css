@@ -33,28 +33,3 @@
     text-decoration: none;
     color: gray;
 }
-
-.thumbnail:hover {
-    opacity: 10%;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-
-    background-color: black;
-}
-
-.overlay:hover {
-    opacity: 1;
-}
-
-.caption {
-    position: absolute;
-    top: 10px;
-    left: 30px;
-}
