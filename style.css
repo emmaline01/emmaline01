@@ -10,7 +10,6 @@
 
 .jumbotron {
     height: 100vh;
-    padding-top: 0;
 }
 
 .vert-center {
@@ -23,8 +22,10 @@
 }
 
 .topbar {
-    float: right;
-    margin-top: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: right;
+
     text-decoration: none;
     color: white;
 }
