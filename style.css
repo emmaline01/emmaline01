@@ -1,11 +1,11 @@
 .icons {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 .icons:hover {
     text-decoration: none;
-    color:darkblue;
+    color: #99F5FF;
 }
 
 .jumbotron {
@@ -14,12 +14,15 @@
 }
 
 .vert-center {
-    min-height: 100%;
-    min-height: 100vh;
+    min-height: 75%;
+    min-height: 75vh;
+    min-width: 95%;
+    min-width: 95vw;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .topbar {
@@ -27,9 +30,20 @@
     margin-top: 10px;
     text-decoration: none;
     color: white;
+    font-size: 20px;
 }
 
 .topbar:hover {
     text-decoration: none;
-    color: darkblue;
+    color: #99F5FF;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-coverImage {
+    background-image: url('background.jpg');
 }
