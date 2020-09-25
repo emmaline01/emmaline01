@@ -7,6 +7,8 @@
     text-decoration: none;
     color: #99F5FF;
     transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 
 .jumbotron {
