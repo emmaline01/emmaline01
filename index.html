@@ -26,36 +26,36 @@
 
   <body>
     
-    <div class = "jumbotron jumbotron-fluid text-white bg-coverImage">
+    <div class = "jumbotron jumbotron-fluid bg-coverImage" style = "color:#cee5f2">
       <div class = "container-fluid">
-        <a href = "emmalineResume.pdf" class = "topbar">RESUME</a>
         <div class = "vert-center">
-          <h1 class = "display-1 font-weight-normal"> Emmaline Mai</h1>
+          <h1 class = "display-1 font-weight-normal" style = "font-size:120px"> Emmaline Mai</h1>
           <p>
-            <a href = "mailto:emmaline.mai@gmail.com" class = "icons"><i class="far fa-envelope fa-3x"></i></a>
-            <a href = "https://github.com/emmaline01/" class = "icons"> <i class="fab fa-github fa-3x"></i> </a>
-            <a href = "https://www.linkedin.com/in/emmaline01/" class = "icons"> <i class="fab fa-linkedin fa-3x"></i> </a>
+            <a href = "mailto:emmaline.mai@gmail.com" class = "far fa-envelope fa-3x icons"> </a>
+            <a href = "https://www.linkedin.com/in/emmaline01/" class="fab fa-linkedin fa-3x icons"> </a>
+            <a href = "https://github.com/emmaline01/" class = "fab fa-github fa-3x icons"> </a>
+            <a href = "emmalineResume.pdf"> <button type="button" class="icons btn btn-outline-light"><b>resume</b></button></a>
           </p>
         </div>
-        <p class = "bottom">
-          <a href = "#about" class = "icons"><i class="fas fa-arrow-circle-down fa-3x"></i></a>
+        <p class = "bottom" >
+          <a href = "#about" class = "icons fas fa-arrow-circle-down fa-3x"> </a>
         </p>
       </div>
     </div>
 
-    <a name = "about"></a>
-    <div class = "container-fluid">
-      <div class = "row">
+    <a name = "about" ></a>
+    <div class = "container-fluid" style = "background-color:#CEE5F2">
+      <div class = "row" style = "padding: 50px 0 40px 0" >
         <div class = "col-sm-1"></div>
         <div class = "col-sm-10">
-          <p style = "text-align: center">
+          <p style = "text-align: center; font-size:large;">
             Hi, I'm Emmaline. 
             <br><br>
             I'm a Carnegie Mellon University computer science student interested in software development and robotics.  
             <br>
             I also enjoy learning card tricks, designing 3D-printable models, and making digital animations. Check out my hobby page <a href = "hobbies.html">here</a>!
             <br><br>
-            Feel free to contact me at emmaline.mai@gmail.com
+            Feel free to contact me at <a href = "mailto:emmaline.mai@gmail.com">emmaline.mai@gmail.com</a>
             <br><br>
           </p>
         </div>
@@ -64,53 +64,78 @@
     </div>
 
     <a name = "projects"></a>
-    <div class = "container-fluid">
-      <div class = "row bg-dark">
+    <div class = "container-fluid" >
+      <div class = "row" style = "padding: 70px 0 0 0; background-color:#A18276">
         <div class = "col-sm-12">
-          <br><br>
-          <h3 style = "text-align: center; color:white"">
+          <h3 style = "text-align: center; color:#241f19">
             Projects
           </h3>
           <br>
         </div>
       </div>
-      <div class = "row bg-dark">
+      <div class = "row" style = "padding: 20px 0 50px 0; background-color:#A18276">
         <div class = "col-sm-4">
-          <p style = "text-align: center; color:white">
-            <a href = "https://youtu.be/NNOIS-tzvYg">
-              <img src = "mainImages/squareJumper.jpg" alt = "Square Jumper project" class = "img-thumbnail icons" style = "height: 200px">
-            </a>
+          <p style = "text-align: center; color:#241f19">
+            <img src = "mainImages/biorobotics.jpg" alt = "Biorobotics project" class = "img-thumbnail">
             <br><br>
-            Square Jumper Drawing Platformer:
+            <span style = "font-size: large"><b>Snake Robot Locomotion Directional Compliance Project</b></span>
             <br>
-            a platformer game built with Python OpenCV and using Dijkstra's algorithm for enemy pathfinding. Built as a term project for 15-112.
+            CMU Biorobotics Lab  |  Matlab
+            <br><br>
+            research with graduate students on novel methods of autonomous snake robot locomotion through obstacles. I collected and analyzed data, and proposed and implemented parts of the control system.
             <br><br>
           </p>
         </div>
         <div class = "col-sm-4">
-          <p style = "text-align: center; color:white">
+          <p style = "text-align: center; color:#241f19">
+            <img src = "mainImages/ukulelebot.jpg" alt = "Ukulelebot project" class = "img-thumbnail">
+            <br><br>
+            <span style = "font-size: large"><b>Ukulelebot</b></span>
+            <br>
+            CMU RoboClub RobOrchestra Hardware Co-Lead |  Arduino, SolidWorks
+            <br><br>
+            an in-progress robot that will play the ukulele with servos and 3D-printed/laser-cut parts.  I helped design parts, and am co-leading programming the controls.
+            <br><br>
+          </p>
+        </div>
+        <div class = "col-sm-4">
+          <p style = "text-align: center; color:#241f19">
             <a href = "https://devpost.com/software/elm-educate-learn-motivate">
-              <img src = "mainImages/elm.jpg" alt = "ELM project" class = "img-thumbnail icons" style = "height: 200px">
+              <img src = "mainImages/elm.jpg" alt = "ELM project" class = "img-thumbnail icons">
             </a>
             <br><br>
-            ELM (Educate Learn Motivate):
+            <span style = "font-size: large"><b>ELM (Educate, Learn, Motivate)</b></span>
             <br>
+            Hackathon Project  |  Android Studio, Java
+            <br><br>
             an app and website that connects tutors and tutees over a video call to discuss any subject. I helped build the app and worked with the database.
             <br><br>
           </p>
         </div>
-        <div class = "col-sm-4">
-          <p style = "text-align: center; color:white">
-            <a href = "https://devpost.com/software/cmu-personalized-dining-i50m4b">
-              <img src = "mainImages/personalizedDining.jpg" alt = "Personalized Dining project" class = "img-thumbnail icons" style = "height: 200px">
-            </a>
+      </div>
+    </div>
+
+    <a name = "footer"></a>
+    <div class = "container-fluid">
+      <div class = "row" style = "background-color:#CEE5F2">
+        <div class = "col-sm-1" ></div>
+        <div class = "col-sm-3">
+          <p style = "text-align: left; color:#241f19; font-size:large;">
             <br><br>
-            CMU Personalized Dining:
+            Emmaline Mai
+          </p>
+        </div>
+        <div class = "col-sm-7">
+          <p style = "text-align: left; color:#241f19; font-size:large;">
+            <br><br>
+            Email: <a href = "mailto:emmaline.mai@gmail.com">emmaline.mai@gmail.com</a>
             <br>
-            first hackathon project - an app and website that uses user preferences to generate a list of dining recommendations. I helped build the app and figure out Google APIs.
+            Linkedin: <a href = "https://www.linkedin.com/in/emmaline01/">https://www.linkedin.com/in/emmaline01/</a>
             <br><br>
           </p>
         </div>
+        <div class = "col-sm-1"></div>
+      </div>
     </div>
   </body>
 </html>

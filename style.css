@@ -1,19 +1,40 @@
 .icons {
-    color: white;
+    color: #cee5f2;
     text-decoration: none;
 }
 
 .icons:hover {
     text-decoration: none;
-    color: #99F5FF;
+    color: #456990;
     transform: scale(1.1);
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
 }
 
+/* for project images */
+.img-thumbnail {
+    background-color: #241f19;
+    border-color: #241f19;
+    height: 250px;
+}
+
+/* for resume button */
+.btn-outline-light {
+    color: #cee5f2;
+    border: 4px solid #cee5f2;
+    vertical-align: text-bottom; 
+    height: 41px;
+}
+.btn-outline-light:hover {
+    background-color: rgba(0,0,0,0);  
+    border: 4px solid #456990;
+    color: #456990;
+}
+
 .jumbotron {
     height: 100vh;
     padding-top: 0;
+    margin-bottom: 0px;
 }
 
 .vert-center {
@@ -27,7 +48,7 @@
     justify-content: center;
     flex-direction: column;
 }
-
+/*
 .topbar {
     float: right;
     margin-top: 10px;
@@ -39,7 +60,7 @@
 .topbar:hover {
     text-decoration: none;
     color: #99F5FF;
-}
+} */
 
 .bottom {
     display: flex;
@@ -49,4 +70,8 @@
 
 .bg-coverImage {
     background-image: url('mainImages/background.jpg');
+}
+
+.container-fluid{
+    overflow: hidden;
 }
