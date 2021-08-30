@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .icons {
     color: #cee5f2;
     text-decoration: none;
