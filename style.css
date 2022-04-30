@@ -17,9 +17,10 @@ html {
 
 /* for project images */
 .img-thumbnail {
-    background-color: #241f19;
+    background-color: #f1f1f1;
     border-color: #241f19;
     height: 250px;
+    object-fit: cover;
 }
 
 /* for resume button */
@@ -87,7 +88,7 @@ html {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 50px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -143,6 +144,7 @@ html {
   
 .modal-body {
     padding: 10px 16px;
+    height: 100%;
 }
 
 .modal-button {
