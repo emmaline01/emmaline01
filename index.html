@@ -77,31 +77,31 @@
         <div class = "col-sm-1"></div>
         <div class = "col-sm-5">
           <p style = "text-align: center; color:#241f19">
-            <img src = "mainImages/biorobotics.jpg" alt = "Biorobotics project" class = "img-thumbnail">
+            <button class="modal-button icons" id="biorobotics-button">
+              <img src = "mainImages/biorobotics.jpg" alt = "Biorobotics project" class = "img-thumbnail">
+            </button>
             <br><br>
-            <span style = "font-size: large"><b>Snake Robot Locomotion Directional Compliance Project</b></span>
+            <span style = "font-size: large"><b>Snake Robot Locomotion - Directional Compliance</b></span>
+            
             <br>
-            CMU Biorobotics Lab Project  |  Matlab
+            CMU Biorobotics Lab  |  Matlab
             <br><br>
-            research with graduate students on novel methods of autonomous snake robot locomotion through obstacles. I collected and analyzed data, and proposed and implemented parts of the control system.
+            research with graduate students on novel methods of autonomous snake robot locomotion through obstacles
             <br><br>
           </p>
         </div>
         <div class = "col-sm-5">
           <p style = "text-align: center; color:#241f19">
-            <a href="https://github.com/emmaline01/cardistry">
-              <img src = "mainImages/cardistry.jpg" alt = "Cardistry dashboard project" class = "img-thumbnail icons">
-            </a>
+            <button class="modal-button icons" id="cardistry-button">
+              <img src = "mainImages/cardistry.jpg" alt = "Cardistry dashboard project" class = "img-thumbnail">
+            </button>
             <br><br>
             <span style = "font-size: large"><b>Cardistry Dashboard</b></span>
             <br>
             Javascript (React), Python (Flask)
             <br><br>
             a web app created to track the cardistry moves I've learned in an SQL 
-            database hosted by Microsoft Azure. It allows adding, editing, and deleting
-            existing moves, it recommends and displays new tutorials using the Google 
-            Data API, and it generates suggested move combinations using a
-            Markov chain.
+            database hosted by Microsoft Azure
             <br><br>
           </p>
         </div>
@@ -110,29 +110,29 @@
         <div class = "col-sm-1"></div>
         <div class = "col-sm-5">
           <p style = "text-align: center; color:#241f19">
-            <a href = "https://devpost.com/software/elm-educate-learn-motivate">
-              <img src = "mainImages/elm.jpg" alt = "ELM project" class = "img-thumbnail icons">
-            </a>
+            <button class="modal-button icons" id="elm-button">
+              <img src = "mainImages/elm.jpg" alt = "ELM project" class = "img-thumbnail">
+            </button>
             <br><br>
             <span style = "font-size: large"><b>ELM (Educate, Learn, Motivate)</b></span>
             <br>
-            Hackathon Project  |  Android Studio, Java
+            Hackathon  |  Android Studio, Java
             <br><br>
-            an app and website that connects tutors and tutees over a video call to discuss any subject. I helped build the app and worked with the SQL database.
+            an app and website that connects tutors and tutees over a video call to discuss any subject
             <br><br>
           </p>
         </div>
         <div class = "col-sm-5">
           <p style = "text-align: center; color:#241f19">
-            <a href = "https://roboticsclub.org/projects/roborchestra/">
-              <img src = "mainImages/ukulelebot.jpg" alt = "Ukulelebot project" class = "img-thumbnail icons">
-            </a>
+            <button class="modal-button icons" id="ukulelebot-button">
+              <img src = "mainImages/ukulelebot.jpg" alt = "Ukulelebot project" class = "img-thumbnail">
+            </button>
             <br><br>
             <span style = "font-size: large"><b>Ukulelebot</b></span>
             <br>
-            CMU RoboClub RobOrchestra Project  |  Arduino, SolidWorks
+            CMU RoboClub RobOrchestra  |  Arduino, SolidWorks
             <br><br>
-            an in-progress robot that will play the ukulele with servos and 3D-printed/laser-cut parts.  I helped design parts, and am co-leading programming the controls.
+            an in-progress robot that will play the ukulele with servos and 3D-printed/laser-cut parts
             <br><br>
           </p>
         </div>
@@ -142,6 +142,7 @@
       </div>
     </div>
 
+    <!-- FOOTER FOR CONTACT INFO -->
     <a name = "footer"></a>
     <div class = "container-fluid">
       <div class = "row" style = "background-color:#CEE5F2">
@@ -164,5 +165,92 @@
         <div class = "col-sm-1"></div>
       </div>
     </div>
+
+
+    <!-- MODALS-->
+    <div id="biorobotics-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Snake Robot Locomotion - Directional Compliance</h2>
+          <span class="biorobotics-close close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p>This snake robot requires pushing off of obstacles in order to 
+            propel itself forward, but complying with obstacles when they get in the way. Directional compliance 
+            determines when the robot should be pliable and when it should push against obstacles. 
+            I ran experiments comparing robot locomotion with/without various types of directional compliance locomotion
+            by collecting, graphing, and analyzing data on feedback from sensors on the robot.
+            I noticed correlations between torque sensor readings and when the robot hit obstacles, and helped
+            develop a mass-spring-damper controls system that regulates the snake robot's amplitude
+            based on those torque readings.</p>
+        </div>
+      </div>
+    </div>
+    <div id="cardistry-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Cardistry Dashboard</h2>
+          <span class="cardistry-close close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p> Cardistry is a somewhat obscure card flourishing hobby that really lacks
+            online resources compared to other hobbies. I created this dashboard
+            as a personal project to support myself through the process of practicing cardistry. 
+            I had extremely minimal knowledge of front-end/back-end technologies prior to this, 
+            and also wanted to explore making my own web app. It 
+            recommends and displays YouTube tutorials of new moves for me to learn
+            using the Google Data API, and when I'm learning moves I can add, edit,
+            or remove them from a Microsoft Azure database. Finally, the dashboard suggests
+            combinations of moves for performing using features of the moves in the database and 
+            a Markov chain. </p>
+          <a href="https://github.com/emmaline01/cardistry" target="_blank">See the Github repo here!</a>
+        </div>
+      </div>
+    </div>
+    <div id="elm-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>ELM (Educate, Learn, Motivate)</h2>
+          <span class="elm-close close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p> This is a group hackathon project that lets people create accounts as tutors
+            or tutees, then search for instant tutoring over video call through the applications.
+            I worked specifically on the Android app, and helped build the screens that
+            allowed available tutors and tutees to select who to connect with, and 
+            allowed tutees to rate tutors after just finishing a call. This was my first 
+            exposure to back-end work, and I introduced myself to SQL through working with this project.
+            However, I wasn't satisfied with my contributions to our final product and this
+            led to me building my own web app later.
+            </p>
+          <p>See the Devpost <a href = "https://devpost.com/software/elm-educate-learn-motivate" target="_blank">here</a> and the GitHub repo 
+          <a href = "https://github.com/Isabel-Gan/tutoring-service-app" target="_blank">here!</a></p>
+        </div>
+      </div>
+    </div>
+    <div id="ukulelebot-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Ukulelebot</h2>
+          <span class="ukulelebot-close close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p> This robot has two components, of which only one is shown. The image
+            has 4 linear actuators with servos attached for pressing down on the 
+            strings of the ukulele, which the second components has one servo to 
+            strum. I helped design and CAD the 3D-printed and laser-cut parts, then assembled. 
+            I was also co-leading the Arduino programming for the controls. The
+            Arduino can take in a MIDI (Musical Instrument Digital Interface) note 
+            and move the linear actuators and servos to the correct positions on the ukulele to play that note.
+            The next steps would be finishing assembly for the second part of the robot
+            and coordinating both parts to play the ukulele.
+          </p>
+          <p>See the RoboClub project listing <a href = "https://roboticsclub.org/projects/roborchestra/" target="_blank">here</a> and the GitHub repo 
+          <a href = "https://github.com/CMU-Robotics-Club/RobOrchestra" target="_blank">here!</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
