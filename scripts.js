@@ -28,3 +28,13 @@ window.onclick = function(event) {
         }
     }
 }
+
+// check that screen isn't too small
+// https://stackoverflow.com/questions/48719745/displaying-an-alert-for-all-mobile-devices
+window.onload=function() {
+    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) {
+        alert("Visit this website on a computer for better View");              
+    }
+    
+}
