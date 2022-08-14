@@ -1,0 +1,11 @@
+.links:hover {
+    text-decoration: none;
+    color: #456990;
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.jumbotron {
+    max-height: 200px;
+}
