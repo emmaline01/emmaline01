@@ -1,6 +1,6 @@
 // referenced https://www.w3schools.com/howto/howto_css_modals.asp
 
-var modals = ["cheerpeer", "biorobotics", "cardistry", "elm", "ukulelebot"]
+var modals = ["cheerpeer", "biorobotics", "cardistry", "elm", "ukulelebot", "dailyDino"]
 
 // allow modal to appear/disappear
 for (let i = 0; i < modals.length; i++) {

@@ -53,8 +53,10 @@
           <p style = "text-align: center; font-size:large;">
             Hi, I'm Emmaline. 
             <br><br>
-            I'm a Carnegie Mellon University computer science student interested in software development and robotics.  
-            <br>
+            I'm a Carnegie Mellon University computer science student interested in software development and robotics.
+            I have prior experience as a Software Engineering Intern at Meta 
+            building a fullstack project and an Automation Controls Engineering Intern at Tesla
+            programming PLCs and HMIs.
             I also enjoy learning card tricks, designing 3D-printable models, and making digital animations. Check out my hobby page <a href = "hobbies.html">here</a>!
             <br><br>
             Feel free to contact me at <a href = "mailto:emmaline.mai@gmail.com" target="_blank">emmaline.mai@gmail.com</a>
@@ -120,7 +122,7 @@
               <br>
               2021
               <br><br>
-              a web app created to track the card tricks I've learned, recommend new
+              web app created to track the card tricks I've learned, recommend new
               tricks to learn, and suggest performance sequences of tricks
               <br><br>
               Skills: JavaScript (React), Python (Flask), SQL, Microsoft Azure
@@ -129,8 +131,23 @@
         </div>
       </div>
       <div class = "row" style = "padding: 20px 0 50px 0; background-color:#f1f1f1">
-        <div class = "col-sm-1"></div>
-        <div class = "col-sm-5">
+        <div class = "col-sm-4">
+          <button class="modal-button icons" id="dailyDino-button">
+            <p style = "text-align: center; color:#241f19">
+              <img src = "mainImages/dailyDino.jpg" alt = "Daily Dino project" class = "img-thumbnail">
+              <br><br>
+              <span style = "font-size: large"><b>Daily Dino</b></span>
+              <br>
+              2022-present
+              <br><br>
+              Chrome Extension that replaces the new tab page with a new dino each day
+              <br><br>
+              Skills: JavaScript, HTML/CSS
+              <br>
+            </p>
+          </button>
+        </div>
+        <div class = "col-sm-4">
           <button class="modal-button icons" id="elm-button">
             <p style = "text-align: center; color:#241f19">
               <img src = "mainImages/elm.jpg" alt = "ELM project" class = "img-thumbnail">
@@ -139,31 +156,28 @@
               <br>
               Hackathon  |  2020
               <br><br>
-              a mobile app and website that connects tutors and tutees over a video call to discuss any subject
+              mobile app and website that connects tutors and tutees over a video call to discuss any subject
               <br><br>
               Skills: Java (Android Studio)
               <br>
             </p>
           </button>
         </div>
-        <div class = "col-sm-5">
+        <div class = "col-sm-4">
           <button class="modal-button icons" id="ukulelebot-button">
             <p style = "text-align: center; color:#241f19">
               <img src = "mainImages/ukulelebot.jpg" alt = "Ukulelebot project" class = "img-thumbnail">
               <br><br>
               <span style = "font-size: large"><b>Ukulelebot</b></span>
               <br>
-              CMU RoboClub RobOrchestra  |  2019-present
+              CMU RoboClub RobOrchestra  |  2019-2021
               <br><br>
-              a robot that will play the ukulele with servos and 3D-printed/laser-cut parts
+              robot that will play the ukulele with servos and 3D-printed/laser-cut parts
               <br><br>
               Skills: Arduino, SolidWorks
               <br>
             </p>
           </button>
-        </div>
-        <div class = "col-sm-4">
-          
         </div>
       </div>
     </div>
@@ -364,6 +378,33 @@
           </p>
           <p>See the RoboClub project listing <a href = "https://roboticsclub.org/projects/roborchestra/" target="_blank">here</a> and the GitHub repo 
           <a href = "https://github.com/CMU-Robotics-Club/RobOrchestra" target="_blank">here!</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="dailyDino-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Daily Dino</h2>
+          <span class="dailyDino-close close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p> 
+            This project is still in progress. Currently, it makes a lot of API
+            calls to various public APIs (Wikipedia for the main image, PaleoDB
+            for lots of facts, the random dino from https://dinosaur-facts-api.shultzlab.com/).
+            The immediate largest next step for me is to perform webscraping to build my own database
+            of dinosaurs, and also make sure errors are handled correctly (eg. 
+            with a dinosaur not existing on Wikipedia).
+            <br><br>
+            Project Context: 
+            <br>
+            After visiting the Carnegie Natural History Museum I wished
+            I knew more random dinosaur facts off the top of my head, so I hoped
+            this extension would expose me to more random dinosaurs.
+          </p>
+          <p>See the GitHub repo 
+          <a href = "https://github.com/emmaline01/DinosaurFacts" target="_blank">here!</a></p>
         </div>
       </div>
     </div>
