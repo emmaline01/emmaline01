@@ -2,27 +2,33 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .icons {
-    color: #cee5f2;
+    color: #e5eef3;
     text-decoration: none;
 }
 
 .icons:hover {
     text-decoration: none;
-    color: #456990;
+    /* color: #456990; */
+    color: #7cc9f3;
     transform: scale(1.1);
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
 }
 
 .resume-button {
-    background-color: #cee5f2;
+    background-color: #e5eef3;
     text-decoration: none;
 }
 
 .resume-button:hover {
     text-decoration: none;
-    background-color: #456990;
+    background-color: #7cc9f3;
     transform: scale(1.1);
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -30,7 +36,7 @@ html {
 
 /* for project images */
 .img-thumbnail {
-    background-color: #f1f1f1;
+    background-color: #e5eef3;
     border-color: #241f19;
     height: 250px;
     object-fit: cover;
@@ -38,13 +44,14 @@ html {
 
 /* for resume button */
 .btn-outline-light {
-    color: #cee5f2;
-    border: 4px solid #cee5f2;
-    vertical-align: text-bottom; 
+    color: #e5eef3;
+    border: 4px solid #e5eef3;
+    vertical-align: text-bottom;
     height: 41px;
 }
+
 .btn-outline-light:hover {
-    background-color: rgba(0,0,0,0);  
+    background-color: rgba(0, 0, 0, 0);
     border: 4px solid #456990;
     color: #456990;
 }
@@ -66,6 +73,7 @@ html {
     justify-content: center;
     flex-direction: column;
 }
+
 /*
 .topbar {
     float: right;
@@ -90,7 +98,7 @@ html {
     background-image: url('mainImages/background.jpg');
 }
 
-.container-fluid{
+.container-fluid {
     overflow: hidden;
 }
 
@@ -98,74 +106,109 @@ html {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 50px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 50px;
+    /* Location of the box */
     padding-bottom: 50px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
 
 /* Modal Content  referenced https://www.w3schools.com/howto/howto_css_modals.asp */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #fafdfe;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
     width: 75%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
 }
-  
-  /* Add Animation */
+
+/* Add Animation */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
-  
+
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
-  
-  /* The Close Button */
+
+/* The Close Button */
 .close {
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-  
+
 .close:hover,
 .close:focus {
     color: rgb(88, 88, 88);
     text-decoration: none;
     cursor: pointer;
 }
-  
+
 .modal-header {
     padding: 10px 16px;
 }
-  
+
 .modal-body {
     padding: 10px 16px;
     height: 100%;
 }
 
 .modal-button {
-    outline:none;
-    border:none;
+    background-color: #fafdfe;
+    outline: none;
+    border: none;
+    height: 100%;
+    display: inline-flex;
+    align-items: start;
+    text-align: center;
+    color: #241f19;
+}
+
+.modal-button:hover {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
 }
 
 .modal-button:focus {
-    outline:none;
+    outline: none;
 }
